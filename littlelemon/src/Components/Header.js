@@ -1,20 +1,25 @@
 import React, { Component } from 'react'
-
+import Main from './Main'
+import Footer from './Footer'
 import Logo from '../images/Logo.svg'
+import { BrowserRouter as Router, Route, Link  , Routes} from "react-router-dom";
+
+
 export class Header extends Component {
   render() {
     return (
       <nav className='nav-container'>
        <img src={Logo} alt='Logo'></img>
        <ul className='nav-list'>
+          
           <li className='nav-list-item'>
-            <a href=''>Home</a>
+          <Link>Home</Link>
           </li>
           <li className='nav-list-item'>
-            <a href=''>About</a>
+            <Link to='/about'>About</Link>
           </li>
           <li className='nav-list-item'>
-            <a href=''>Menu</a>
+          <Link to='/contact'>About</Link>
           </li>
           <li className='nav-list-item'>
             <a href=''>Reservation</a>
@@ -26,7 +31,9 @@ export class Header extends Component {
             <a href=''>Login</a>
           </li>
        </ul>
+       
       </nav>
+     
     )
   }
 }

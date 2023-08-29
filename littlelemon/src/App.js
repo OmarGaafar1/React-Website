@@ -1,16 +1,26 @@
-import Header from './Components/Header';
-import Main from './Components/Main'
-import Footer from './Components/Footer'
-
 import './App.css';
+import HomePage from './Components/HomePage'; 
+import BookingPage from './Components/BookingPage';
+
+
+
+
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import Chicago from './Components/Chicago';
+
+
+
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Main/>
-      <Footer/>
-    </div>
+    <Router>
+      <BookingPage/>
+      {/* <HomePage/> */}
+      <Routes> 
+        <Route path="/" element={<HomePage/>}></Route>
+        {/* <Route path="/contact" element={< />}></Route> */}
+      </Routes>
+    </Router>
     );
 }
 
