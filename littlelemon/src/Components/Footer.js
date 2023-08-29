@@ -5,27 +5,29 @@ const Footer = () => {
     <article className='Footer'>
         <img src={Restaurant} alt='Restaurant Image'></img>
         <ul>
+          <h4>Links</h4>
           <li>
-            <a href=''>HOME</a>
+            <a href=''>Home</a>
           </li>
           <li>
-            <a href=''>ABOUT</a>
+            <a href=''>About</a>
           </li>
           <li>
-            <a href=''>MENU</a>
+            <a href=''>Menu</a>
           </li>
           <li>
-            <a href=''>RESERVATION</a>
+            <a href=''>Reservation</a>
           </li>
           <li>
-            <a href=''>ORDER ONLINE</a>
+            <a href=''>Order online</a>
           </li>
           <li>
-            <a href=''>LOGIN</a>
+            <a href=''>Login</a>
           </li>
        </ul>
 
        <ul>
+        <h4>Contact</h4>
           <li>
             <a href=''>Address</a>
           </li>
@@ -39,14 +41,15 @@ const Footer = () => {
 
 
        <ul>
+        <h4>Social Media Links</h4>
           <li>
-            <a href=''>Address</a>
+            <a href=''>Facebook</a>
           </li>
           <li>
-            <a href=''>Phone</a>
+            <a href=''>Instgram</a>
           </li>
           <li>
-            <a href=''>Email</a>
+            <a href=''>Twitter</a>
           </li>
        </ul>
 

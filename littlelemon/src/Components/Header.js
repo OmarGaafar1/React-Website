@@ -8,22 +8,22 @@ export class Header extends Component {
        <img src={Logo} alt='Logo'></img>
        <ul className='nav-list'>
           <li className='nav-list-item'>
-            <a href=''>HOME</a>
+            <a href=''>Home</a>
           </li>
           <li className='nav-list-item'>
-            <a href=''>ABOUT</a>
+            <a href=''>About</a>
           </li>
           <li className='nav-list-item'>
-            <a href=''>MENU</a>
+            <a href=''>Menu</a>
           </li>
           <li className='nav-list-item'>
-            <a href=''>RESERVATION</a>
+            <a href=''>Reservation</a>
           </li>
           <li className='nav-list-item'>
-            <a href=''>ORDER ONLINE</a>
+            <a href=''>Order online</a>
           </li>
           <li className='nav-list-item'>
-            <a href=''>LOGIN</a>
+            <a href=''>Login</a>
           </li>
        </ul>
       </nav>

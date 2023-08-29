@@ -64,7 +64,7 @@
 
 .hero-container p {
   color:white;
-  width: 200px;
+  width: 300px;
 }
 
 
@@ -166,7 +166,6 @@
   margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
-
   gap:15px;
 }
 
@@ -306,6 +305,7 @@
 
 .About{
   margin-left: 10%;
+  height: 450px;
 }
 .description{
   display: flex;
@@ -320,17 +320,16 @@
 .description h3{
   color:#2C435E;
   margin-top: 0;
+  margin-bottom:80px;
 
 }
 .description p{
   color:#495E57;
-  width: 300px;
+  width: 400px;
 
 }
 
-.photo-stack{
-  position: absolute;
-}
+
 .positioned-photo {
   border-radius: 20px;
   max-width: 100%;
@@ -340,34 +339,144 @@
 
 .photo1 {
   top: -200px;
-  right: -770px;
+  right: -700px;
 }
 
 .photo2 {
   top: -270px;
-  right: -700px;
+  right: -600px;
 }
 
 /* Adjust positioning for smaller screens */
-@media (max-width: 1220px) {
-  .photo1 {
-    right: -300px;
-  }
-
-  .photo2 {
-    right: -230px;
-  }
-}
 
 
 
 
 .Footer{
-  margin-top: 120px;
-  background-color: yellow;
+  display:flex;
+  flex-wrap:wrap;
+  background-color: #F4CE14;
+  padding-bottom: 30px;
+  min-height:300px;
+  gap:8%;
 }
 
+
+.Footer a{
+  text-decoration: none;
+  color:#4B4B4B;
+  transition: color 0.3s; 
+}
+
+.Footer a:hover{
+  color: #007bff;
+  font-weight: bold;
+}
+.Footer ul{
+  margin-top: 50px;
+  list-style: none;
+}
+
+.Footer li{
+  margin-bottom: 5px;
+}
+
+
+.Footer img{
+  margin-top: 40px;;
+ margin-left: 10%;
+ width:200px;
+ height: 240px;
+ border-radius: 10px;
+}
+
+
+.Footer h4{
+  margin-bottom: 30px;
+}
+ 
 img{
   width:250px;
   height: 166px;
+}
+
+
+@media (max-width:1180px) {
+ 
+  .highlights-container{
+    justify-content: center;
+  }
+  
+}
+
+@media (max-width:963px) {
+  .Footer{
+    gap:10px;
+  }
+  .nav-container{
+    justify-content: center;
+  }
+}
+
+@media (max-width:732px) {
+  .Footer{
+    gap:1px;
+    
+  }
+  .Footer ul{
+    padding-left:20px;
+  }
+}
+
+@media (max-width:1227px) {
+  .About img{
+    width: 200px;
+    height: 250px;
+  }
+  .photo1{
+    right:-500px;
+  }
+  .photo2{
+    right:-450px;
+  }
+}
+
+@media (max-width:960px) {
+  .About img{
+    width: 150px;
+    height: 200px;
+  }
+  .photo1{
+    right:-500px;
+  }
+  .photo2{
+    right:-450px;
+  }
+  .hero-container img{
+    width:150px;
+    height:250px;
+    top:150px;
+  }
+  .hero-container p{
+    width:250px;
+  }
+}
+
+@media (max-width:850px) {
+  .About img{
+    width: 150px;
+    height: 200px;
+  }
+  .description p {
+    width:300px;
+  }
+  .photo1{
+    right:-400px;
+  }
+  .photo2{
+    right:-350px;
+  }
+  .Footer{
+    justify-content: center;
+  }
 }

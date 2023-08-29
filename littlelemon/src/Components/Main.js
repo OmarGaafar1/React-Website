@@ -140,10 +140,8 @@ const Main = () => {
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
             </section>
-            <section className='photo-stack'>
                 <img className='positioned-photo photo1' src={About}></img>
                 <img className='positioned-photo photo2' src={About2}></img>
-            </section>
         </article>
 
     </main>
