@@ -72,7 +72,7 @@ const BookingForm = (props) => {
 
         <label htmlFor="occasion">Occasion</label>
         <select id="occasion" value={occasion} onChange={e => setOccasion(e.target.value)}>
-          <option value='-1'>Click Me</option>
+          <option value='-1' hidden>Click Me</option>
           <option>Birthday</option>
           <option>Anniversary</option>
           <option>Other</option>
