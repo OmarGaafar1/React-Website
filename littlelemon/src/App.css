@@ -508,9 +508,10 @@ img{
   padding: 20px;
   padding-right:20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
-
+.form h3{
+  text-align: center;
+}
 
 .form label {
   font-weight: bold;
@@ -536,8 +537,12 @@ img{
   border: none;
   cursor: pointer;
 }
+.form input[type="submit"]:disabled {
+  cursor:not-allowed;  
+  opacity: 0.6;
 
-.form input[type="submit"]:hover {
+}
+.form input[type="submit"]:not(:disabled):hover {
   background-color: #0056b3;
 }
 
@@ -617,4 +622,24 @@ img{
 .close-button:hover {
   background-color: #000000;
   color: white;
+}
+
+#noAvailableTime
+{
+  font-size:15px;
+  font-weight: bold;
+  text-align: center;
+  color: #495E57
+}
+
+
+.max-guests{
+  height:25px;
+  display: flex;
+  align-items: center;
+  gap:180px;
+
+}
+.max-guests p{
+  font-size: small;
 }

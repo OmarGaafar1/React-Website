@@ -11,7 +11,6 @@ const BookingPage = () => {
 
 
   const submit = async(e , formData) => {
-    console.log("da5alna gwa ");
     e.preventDefault();
     const Success = await submitAPI(formData);
     if(Success)
@@ -43,7 +42,6 @@ const BookingPage = () => {
       const times = await fetchAPI(date);
       dispatch({type:"Fetch_Scuccessfully", payload:{times}})
     } catch (error) {
-      console.error("No times this day! ");
       dispatch({type:"Fetch_Failed"})
       
     }
