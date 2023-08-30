@@ -1,12 +1,8 @@
 import './App.css';
 import HomePage from './Components/HomePage'; 
 import BookingPage from './Components/BookingPage';
-
-
-
-
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
-import Chicago from './Components/Chicago';
+import ConfirmedBooking from './Components/ConfirmedBooking';
 
 
 
@@ -14,13 +10,19 @@ import Chicago from './Components/Chicago';
 function App() {
   return (
     <Router>
-      <BookingPage/>
-      {/* <HomePage/> */}
-      <Routes> 
+
+      <ConfirmedBooking/>
+      <Routes>
         <Route path="/" element={<HomePage/>}></Route>
-        {/* <Route path="/contact" element={< />}></Route> */}
+        <Route path="/reservation" element={<BookingPage/>}></Route>
       </Routes>
     </Router>
+    // <Router>
+    //   <Routes> 
+    //     <Route path="/" element={<HomePage/>}></Route>
+    //     <Route path="/reservation" element={<BookingPage/>}></Route>
+    //   </Routes>
+    // </Router>
     );
 }
 

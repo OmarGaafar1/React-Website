@@ -17,6 +17,7 @@ import Review1 from '../images/Review1.jpg'
 import Review2 from '../images/Review2.jpg'
 import Review3 from '../images/Review3.jpg'
 import Review4 from '../images/Review4.jpg'
+import Chicago from './Chicago';
 const Testimonials = [
   {
     ratingImg:ratings,
@@ -89,6 +90,7 @@ const HomePage = () => {
     <Main/>
     <Specials specialItems={SpecialItems}/>
     <CustomerSay testimonials={Testimonials}/>
+    <Chicago/>
     <Footer/>
     </>
   )

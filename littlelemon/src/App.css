@@ -1,3 +1,8 @@
+html{
+  transition:3s;
+  scroll-behavior: smooth;
+}
+
 .nav-container {
   display: flex;
   gap:25%;
@@ -481,7 +486,135 @@ img{
   }
 }
 
-.Footer{
-  
+
+
+.form-container {
+  background-image: url('./images/restaurant.jpg');
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4CE14;
+  border-radius: 10px;
+  width:400px;
+  padding: 20px;
+  padding-right:20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+
+.form label {
+  font-weight: bold;
+}
+
+.form select,
+.form input[type="date"],
+.form input[type="number"],
+.form input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form select {
+  appearance: none;
+}
+
+.form input[type="submit"] {
+  background-color: #495E57;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.confirmed-booking {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50; /* Green color */
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeInOut 3s ease-in-out; /* Animation */
+}
+.confirmation-title {
+  display: flex;
+  align-items: center;
+  gap:30px;
+  font-size: 1.2em;
+}
+.confirmation-summary {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  position: relative;
+}
+
+
+
+.icon-svg {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  animation: trimPathAnimation 3s ease-in-out infinite; /* Trimming animation */
+}
+
+@keyframes trimPathAnimation {
+  0% {
+    stroke-dasharray: 0, 100;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 80, 100;
+    stroke-dashoffset: 15;
+  }
+  100% {
+    stroke-dasharray: 0, 100;
+    stroke-dashoffset: 80;
+  }
+}
+.close-button {
+  background-color: white;
+  color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+.close-button:hover {
+  background-color: #000000;
+  color: white;
+}

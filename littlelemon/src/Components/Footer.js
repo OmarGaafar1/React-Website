@@ -2,7 +2,7 @@ import React from 'react'
 import Restaurant from '../images/restaurant.jpg'
 const Footer = () => {
   return (
-    <article className='Footer'>
+    <article className='Footer' id='Footer'>
         <img src={Restaurant} alt='Restaurant Image'></img>
         <ul>
           <h4>Links</h4>

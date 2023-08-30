@@ -5,6 +5,9 @@ import Logo from '../images/Logo.svg'
 import { BrowserRouter as Router, Route, Link  , Routes} from "react-router-dom";
 
 
+
+
+
 export class Header extends Component {
   render() {
     return (
@@ -13,16 +16,16 @@ export class Header extends Component {
        <ul className='nav-list'>
           
           <li className='nav-list-item'>
-          <Link>Home</Link>
+              <Link to='/'>Home</Link>
           </li>
           <li className='nav-list-item'>
-            <Link to='/about'>About</Link>
+              <Link to='/about'>About</Link>
           </li>
           <li className='nav-list-item'>
-          <Link to='/contact'>About</Link>
+              <Link to='/#Footer'> Contact</Link>
           </li>
           <li className='nav-list-item'>
-            <a href=''>Reservation</a>
+            <Link to='/reservation'>Reservation</Link>
           </li>
           <li className='nav-list-item'>
             <a href=''>Order online</a>
